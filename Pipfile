@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 bluepy = "*"
 gattlib = "*"
-swbtutil = {path = "."}
 
 [dev-packages]
 

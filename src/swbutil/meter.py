@@ -3,7 +3,7 @@ from bluepy.btle import Scanner, DefaultDelegate
 
 class SwitchBotMeter:
     def __init__(self, mac_addr):
-        self.mac_addr = mac_addr
+        self.mac_addr = mac_addr.lower()
         self.scanner = Scanner().withDelegate(MeterDelegate(self.mac_addr))
         self.scanned_data = None
 
